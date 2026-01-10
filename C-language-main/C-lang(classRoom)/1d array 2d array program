@@ -1,0 +1,118 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, n;
+
+    /* ================= Q1: Length of 1D Array ================= */
+    printf("\nQ1: Find Length of 1D Array\n");
+    printf("Enter array size: ");
+    scanf("%d", &n);
+
+    int arr1[n];
+    for(i = 0; i < n; i++)
+    {
+        printf("a[%d] = ", i);
+        scanf("%d", &arr1[i]);
+    }
+
+    printf("Length of an Array: %d\n", n);
+
+    /* ================= Q2: Average of 1D Array ================= */
+    printf("\nQ2: Find Average of 1D Array\n");
+
+    int sum = 0;
+    float avg;
+
+    for(i = 0; i < n; i++)
+    {
+        sum = sum + arr1[i];
+    }
+
+    avg = (float)sum / n;
+    printf("Average of an Array: %.2f\n", avg);
+
+    /* ================= Q3: Addition of Two 1D Arrays ================= */
+    printf("\nQ3: Addition of Two 1D Arrays\n");
+
+    int a[n], b[n], c[n];
+
+    printf("Enter Array A elements:\n");
+    for(i = 0; i < n; i++)
+    {
+        printf("a[%d] = ", i);
+        scanf("%d", &a[i]);
+    }
+
+    printf("Enter Array B elements:\n");
+    for(i = 0; i < n; i++)
+    {
+        printf("b[%d] = ", i);
+        scanf("%d", &b[i]);
+    }
+
+    for(i = 0; i < n; i++)
+    {
+        c[i] = a[i] + b[i];
+    }
+
+    printf("Array C is: ");
+    for(i = 0; i < n; i++)
+    {
+        printf("%d ", c[i]);
+    }
+    printf("\n");
+
+    /* ================= Q4: Get & Print 1D Array ================= */
+    printf("\nQ4: Get and Print 1D Array\n");
+
+    for(i = 0; i < n; i++)
+    {
+        printf("%d ", arr1[i]);
+    }
+    printf("\n");
+
+    /* ================= Q5: Sum of 1D Array ================= */
+    printf("\nQ5: Sum of 1D Array\n");
+    printf("Sum = %d\n", sum);
+
+    /* ================= Q6: Multiplication Table of Array Elements ================= */
+    printf("\nQ6: Multiplication Table of Each Element\n");
+
+    for(i = 0; i < n; i++)
+    {
+        int j;
+        printf("\nTable of %d:\n", arr1[i]);
+        for(j = 1; j <= 10; j++)
+        {
+            printf("%d x %d = %d\n", arr1[i], j, arr1[i] * j);
+        }
+    }
+
+    /* ================= Q7: Reverse Array ================= */
+    printf("\nQ7: Array in Reverse Order\n");
+
+    for(i = n - 1; i >= 0; i--)
+    {
+        printf("%d ", arr1[i]);
+    }
+    printf("\n");
+
+    /* ================= Q8: Copy One Array to Another ================= */
+    printf("\nQ8: Copy Array Elements\n");
+
+    int copy[n];
+    for(i = 0; i < n; i++)
+    {
+        copy[i] = arr1[i];
+    }
+
+    printf("Copied Array: ");
+    for(i = 0; i < n; i++)
+    {
+        printf("%d ", copy[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
