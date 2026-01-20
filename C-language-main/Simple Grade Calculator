@@ -1,0 +1,62 @@
+#include <stdio.h>
+
+int main() {
+    int score;
+    char grade;
+
+    printf("===== Simple Grade Calculator =====\n");
+
+    // Input
+    printf("Enter your score (0 - 100): ");
+    scanf("%d", &score);
+
+    // Input validation
+    if (score < 0 || score > 100) {
+        printf("Error: Invalid score! Please enter a value between 0 and 100.\n");
+        return 0;
+    }
+
+    // Grade calculation using ternary operator
+    grade = (score >= 90) ? 'A' :
+            (score >= 80) ? 'B' :
+            (score >= 70) ? 'C' :
+            (score >= 60) ? 'D' :
+            (score >= 50) ? 'E' : 'F';
+
+    // Display grade
+    printf("Score: %d\n", score);
+    printf("Grade: %c\n", grade);
+
+    // Feedback using switch-case
+    switch (grade) {
+        case 'A':
+            printf("Remark: Outstanding performance.\n");
+            break;
+        case 'B':
+            printf("Remark: Very good performance.\n");
+            break;
+        case 'C':
+            printf("Remark: Satisfactory performance.\n");
+            break;
+        case 'D':
+            printf("Remark: Needs improvement.\n");
+            break;
+        case 'E':
+            printf("Remark: Just passed. Work harder.\n");
+            break;
+        case 'F':
+            printf("Remark: Failed. Try again.\n");
+            break;
+    }
+
+    // Eligibility check using if-else
+    if (grade == 'A' || grade == 'B' || grade == 'C') {
+        printf("Status: Eligible for the next level.\n");
+    } else {
+        printf("Status: Not eligible for the next level.\n");
+    }
+
+    printf("===================================\n");
+
+    return 0;
+}
