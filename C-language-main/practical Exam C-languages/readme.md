@@ -15,6 +15,9 @@ Write a C program to calculate the average marks of a student considering **5 su
 * Calculates total and average marks
 * Uses `if-else` conditions to decide the grade (A, B, C, D, or Fail)
 
+<img width="1659" height="816" alt="Screenshot 2026-02-06 153353" src="https://github.com/user-attachments/assets/92d9ad0b-344f-410a-a077-81e98741d2a8" />
+
+
 ---
 
 ## Question 2: Average of Elements in a 2D Array Using Function
@@ -28,6 +31,7 @@ Write a C program to find the **average of all elements** present in a **2D arra
 * Passes the 2D array to a function
 * The function calculates the sum and average of all elements
 * Displays the average value
+<img width="1656" height="754" alt="Screenshot 2026-02-06 154303" src="https://github.com/user-attachments/assets/b8a3f3c3-3137-4551-8cbc-296bbd3f84ab" />
 
 ---
 
@@ -42,6 +46,7 @@ Write a C program that defines a function to print **only odd elements** from a 
 * Passes the array to a function
 * The function checks each element
 * Prints only the odd numbers
+<img width="1659" height="816" alt="Screenshot 2026-02-06 153353" src="https://github.com/user-attachments/assets/97e9577a-5c76-4cee-886d-78623814d08f" />
 
 ---
 
@@ -56,6 +61,7 @@ Write a C program to find and display **even elements** from a **1D array using 
 * Uses a pointer to access array elements
 * Checks each element using pointer arithmetic
 * Prints only even numbers
+<img width="1654" height="649" alt="Screenshot 2026-02-06 153905" src="https://github.com/user-attachments/assets/29e36491-facb-4721-8f02-7fa7e00a3606" />
 
 ---
 
@@ -70,6 +76,7 @@ Write a C program to print a **number pattern** using **nested for loops**, wher
 * First loop controls rows
 * Inner loops handle spaces and numbers
 * Prints the required pattern line by line
+*<img width="1655" height="668" alt="Screenshot 2026-02-06 153530" src="https://github.com/user-attachments/assets/cd12fd7f-4b4e-4588-9ac1-4e9456c3f2b3" />
 
 ---
 
